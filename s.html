@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+                
+
+    <form action="" name="form1">
+      <input type="text" readonly  name="write" id="a">
+      <br>
+
+      <input type="reset"   value=" Clear " class="button" >
+      <input type="button"   value="  back  " class="button" onclick="back()"> 
+      <br>
+      <input type="button" value=" 1 " class="button"  onclick="bt1()">
+      <input type="button" value=" 2 " class="button"  onclick="bt2()">
+      <input type="button" value=" 3 " class="button"onclick="bt3()">
+      <input type="button" value=" + " class="plus" onclick="sum()">
+      <br>
+      <input type="button" value=" 4 " class="button"  onclick="bt4()">
+      <input type="button" value=" 5 " class="button"  onclick="bt5()">
+      <input type="button" value=" 6 " class="button"  onclick="bt6()">
+      <input type="button" value=" - " class="minus" onclick="minus()">
+      <br>
+      <input type="button" value=" 7 " class="button"  onclick="bt7()">
+      <input type="button" value=" 8 " class="button"  onclick="bt8()">
+      <input type="button" value=" 9 " class="button"  onclick="bt9()">
+      <input type="button" value=" * " class="multiple" onclick="multiplee()">
+      <br>
+      <input type="button" value=" 0 " class="zero" onclick="bt0()">
+      <input type="button" value="  .  " class="dot" onclick="dot()">
+      <input type="button" value=" / " class="divise" onclick="divise()">
+      <input type="button" value=" = " class="equale" onclick="equale()">
+
+
+
+
+    </form>
+
+    <script>
+
+      function bt1(){
+        
+        document.form1.write.value += 1;
+
+      }
+
+      function bt2(){
+        
+        document.form1.write.value += 2;
+
+      }
+      function bt3(){
+        
+        document.form1.write.value += 3;
+
+      }
+      function bt4(){
+   
+        document.form1.write.value += 4;
+
+      }
+      function bt5(){
+        
+        document.form1.write.value += 5;
+
+      }
+      function bt6(){
+        
+        document.form1.write.value += 6;
+
+      }
+      function bt7(){
+     
+        document.form1.write.value += 7;
+
+      }
+      function bt8(){
+       
+        document.form1.write.value += 8;
+
+      }
+      function bt9(){
+        
+        document.form1.write.value += 9;
+
+      }
+      function bt0(){
+        
+        document.form1.write.value += 0;
+
+      }
+      function dot(){
+        
+        document.form1.write.value += ".";
+
+      }
+      function sum(){
+        
+        document.form1.write.value += "+";
+
+      }
+      function minus(){
+        
+        document.form1.write.value += "-";
+
+      }
+      function multiplee(){
+        
+        document.form1.write.value += "*";
+
+      }
+      function divise(){
+        
+        document.form1.write.value += "/";
+
+      }
+
+      function equale(){
+       var sum = document.form1.write.value;
+        if(sum){
+          document.form1.write.value = eval(sum);
+        }
+      }
+
+      function back(){
+        let exp = document.form1.write.value;
+        document.form1.write.value = exp.substring(0, exp.length - 1);
+       
+      }
+
+    </script>
+
+</body>
+</html>

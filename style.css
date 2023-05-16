@@ -1,0 +1,11 @@
+form{
+  width: 174px;
+  margin: 100px auto;
+  height: 215px;
+  border:2px black solid  ;
+}
+
+.button,.plus,.minus,.multiple,.dot,.zero,.divise,.equale,cle{
+  margin: 10px 5px;
+}
+
